@@ -34,55 +34,61 @@
 	- mouseX, mouseY
 	- if/else, mouseIsPressed
 	- background -> difference between setup and draw
-- Additional Topics 
-	- [more interactivity](https://p5js.org/learn/interactivity.html)
-		- keyIsPressed
-		- pmouseX, pmouseY
-	- binary logic 
-	- arrays
-	- translate/rotate/scale
-		- push/pop
-	- print
-	- [colors](https://p5js.org/learn/color.html) / hsb
-	- random & noise
-	- variables
-		- global vs lokal
-	- functions
-	- javascript objects 
-	- classes
-	- conditionals
-	- bouncing balls
-	- loops
-		- loop-in-loop
-	- images
-	- sound
-	- 3d
-	- APIs
-	- running p5js locally
-	- serving from a server
-	- [backend-stuff](https://github.com/processing/p5.js/wiki/p5.js,-node.js,-socket.io)
-	- libraries
-	- [p5.dom library](http://p5js.org/reference/#/libraries/p5.dom), [beyond the canvas](https://github.com/processing/p5.js/wiki/Beyond-the-canvas)
+
+#### Challenge 1: Color Rectangle
+![](img/challenge1.png)
+
+We want to accomplish something like [this](http://www.generative-gestaltung.de/2/sketches/?01_P/P_1_0_01).
+
+1. Draw a rectangle in the middle of the canvas -> use the function [rectMode](https://p5js.org/reference/#/p5/rectMode) for this.
+2. Make the rectangle scale with the x-position of the Mouse. It should be exactly as big as the canvas when the mouse is at the right end of the canvas. Use mouseX and [width](https://p5js.org/reference/#/p5/width)  to accomplish this.
+3. Change the background color depending on the y-coordinate of the mouse.
+4. Use [colorMode(HSB)](https://p5js.org/reference/#/p5/colorMode) to make the background-color change more smoothly.
+5. Change the color of the rectangle in the opposite direction. Background and rectangle should have the same color in the middle of the canvas.
+
+#### Challenge 2: Bouncing Ball
+1. Make a circle move from one side of the screen to the other. Use a global variable for this.  
+![](img/move-ellipse.gif)
+2. Make it go back when it hits the right border of the canvas. Use a speedX variable to accomplish this.   
+![](img/first-bounce.gif)
+3. Let it bounce back on the left border as well. Use an OR statement (||) for this.  
+![](img/bounce-backandforth.gif)
+4. Make it also bounce on the top and bottom of the canvas.  
+![](img/bouncing-xy.gif)
+5. Change the color of the backgroud or the ball every time a wall is hit.
+
+
+### Additional Topics 
+- [more interactivity](https://p5js.org/learn/interactivity.html)
+	- keyIsPressed
+	- pmouseX, pmouseY
+- binary logic 
+- arrays
+- translate/rotate/scale
+	- push/pop
+- print
+- [colors](https://p5js.org/learn/color.html) / hsb
+- random & noise
+- variables
+	- global vs lokal
+- functions
+- javascript objects 
+- classes
+- conditionals
+- bouncing balls
+- loops
+	- loop-in-loop
+- images
+- sound
+- 3d
+- APIs
+- running p5js locally
+- serving from a server
+- [backend-stuff](https://github.com/processing/p5.js/wiki/p5.js,-node.js,-socket.io)
+- libraries
+- [p5.dom library](http://p5js.org/reference/#/libraries/p5.dom), [beyond the canvas](https://github.com/processing/p5.js/wiki/Beyond-the-canvas)
 
 	
 	
 	
-	
 
-
-
-
-
-function setup() {
-	createCanvas(400, 400);
-	background(225, 0, 100);
-}
-
-function draw() {
-	if (mouseIsPressed) {
-		ellipse(mouseX, mouseY, 50, 50);
-	} 
-	else {
-		background(225, 200, 100);	
-	}
-}
