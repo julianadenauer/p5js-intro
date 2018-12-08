@@ -63,3 +63,26 @@
 	- [backend-stuff](https://github.com/processing/p5.js/wiki/p5.js,-node.js,-socket.io)
 	- libraries
 	- [p5.dom library](http://p5js.org/reference/#/libraries/p5.dom), [beyond the canvas](https://github.com/processing/p5.js/wiki/Beyond-the-canvas)
+
+	
+	
+	
+	
+
+
+
+
+
+function setup() {
+	createCanvas(400, 400);
+	background(225, 0, 100);
+}
+
+function draw() {
+	if (mouseIsPressed) {
+		ellipse(mouseX, mouseY, 50, 50);
+	} 
+	else {
+		background(225, 200, 100);	
+	}
+}
