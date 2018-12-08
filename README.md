@@ -5,6 +5,17 @@
 - [The Coding Train](https://www.youtube.com/user/shiffman/playlists?view=50&sort=dd&shelf_id=14) – YouTube Tutorials von Daniel Shiffman
 - Book (and Website) [Generative Gestaltung](http://www.generative-gestaltung.de/2/) von Benedikt Groß, Hartmut Bohnacker und Julia Laub
 
+## Inspriration
+- [Zach Lieberman - Daily Sketches](https://www.instagram.com/zach.lieberman/)
+- [Lauren Mccarthy - us+](http://www.lauren-mccarthy.com/us)
+- [onformative - Porsche Backbox](https://onformative.com/work/porsche-blackbox)
+- [Kyle McDonald - Sharing Faces](https://vimeo.com/96549043)
+- [Andreas Nicolas Fischer - VOID VIII 01](http://studioanf.com/v0id-8/)
+- [Waltz Binaire - Soap and Milk](http://waltzbinaire.com/work/soap-and-milk/), openframeworks + vvvv
+- [Facadeprinter](http://sonicedevelopment.com/vamos-rafa/)
+- [So Kanno - Lasermice](http://kanno.so/lasermice/)
+- [Benjamin Maus - Jller](https://vimeo.com/167126696)
+
 ## Sessions
 ### N°1 08.12.2018
 - Introduction Round 
@@ -28,17 +39,21 @@
 		- keyIsPressed
 		- pmouseX, pmouseY
 	- binary logic 
+	- arrays
 	- translate/rotate/scale
+		- push/pop
 	- print
 	- [colors](https://p5js.org/learn/color.html) / hsb
-	- random function
+	- random & noise
 	- variables
+		- global vs lokal
 	- functions
 	- javascript objects 
 	- classes
 	- conditionals
 	- bouncing balls
 	- loops
+		- loop-in-loop
 	- images
 	- sound
 	- 3d
