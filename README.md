@@ -40,7 +40,7 @@
 
 We want to accomplish something like [this](http://www.generative-gestaltung.de/2/sketches/?01_P/P_1_0_01).
 
-1. Draw a rectangle in the middle of the canvas -> use the function [rectMode](https://p5js.org/reference/#/p5/rectMode) for this.
+1. Draw a rectangle in the middle of the canvas -> use the function [rectMode](https://p5js.org/reference/#/p5/rectMode) and [width](https://p5js.org/reference/#/p5/width) for this.
 2. Make the rectangle scale with the x-position of the Mouse. It should be exactly as big as the canvas when the mouse is at the right end of the canvas. Use mouseX and [width](https://p5js.org/reference/#/p5/width)  to accomplish this.
 3. Change the background color depending on the y-coordinate of the mouse.
 4. Use [colorMode(HSB)](https://p5js.org/reference/#/p5/colorMode) to make the background-color change more smoothly.
