@@ -49,7 +49,7 @@ We want to accomplish something like [this](http://www.generative-gestaltung.de/
 #### Challenge 2: Bouncing Ball
 1. Make a circle move from one side of the screen to the other. Use a global variable for this.  
 ![](img/move-ellipse.gif)
-2. Make it go back when it hits the right border of the canvas. Use a speedX variable to accomplish this.   
+2. Make it go back when it hits the right border of the canvas. Create an speedX variable to accomplish this. 
 ![](img/first-bounce.gif)
 3. Let it bounce back on the left border as well. Use an OR statement (||) for this.  
 ![](img/bounce-backandforth.gif)
