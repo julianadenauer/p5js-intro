@@ -66,6 +66,23 @@ Make an app that draws a circle where the mouse is. When you press the mouse, th
 
 #### Translate & Rotate
 
+#### Bubble 
+* 07-random-bubble
+* 08-bubble-class
+* 09-same-same-but-different
+* 10-bubble-array
+
+#### Challenge 3
+* Make all bubbles move in the same direction
+![](img/bubbles-same-speed.gif)
+* Make them move at different speeds
+![](img/bubbles-different-speeds.gif)
+* Make the speed variable a vector using [createVector](https://p5js.org/reference/#/p5/createVector)
+* add a `setDirection` function to the Bubble class that allows to set the direction of each bubble by an angle. use [p5.Vector.fromAngle](https://p5js.org/reference/#/p5.Vector/fromAngle) for this.
+* give the bubbles random speeds after setting the direction
+* add a [slider](https://p5js.org/reference/#/p5/createSlider) to set the direction
+
+#### Getting the wind direction from an API
 
 
 ### Additional Topics 
