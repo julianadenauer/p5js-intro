@@ -1,22 +1,33 @@
-var slider;
 var bubbles = [];
+var slider;
 
 function setup() {
-	createCanvas(400, 400);
-	slider = createSlider(0, 360, 100);
+	createCanvas(600, 600);
+	slider = createSlider(0, 360);
 
+	// create all our bubbles! yay!
 	for(var i = 0; i < 100; i = i+1){
 		bubbles.push(new Bubble());
-		bubbles[i].setDirection(10);
 	}
+
+	// we now have a lot of bubbles in our bubbles-list! yay!
 }
 
 function draw() {
-	background(255);
+	// draw a white background
+	background(600);
+
+	// update and draw all our bubbles!
 	for(var i = 0; i < 100; i = i+1){
-		bubbles[i].move();
-		bubbles[i].show();
+
+		// set the direction according to the slider
 		bubbles[i].setDirection(slider.value());
+
+		// update the positions
+		bubbles[i].move();
+
+		// and draw them on the canvas
+		bubbles[i].show();
 	}
 }
 
@@ -25,24 +36,22 @@ class Bubble {
 		this.x = random(width);
 		this.y = random(height);
 		this.color = random(width);
-		this.vec = createVector(random(0, 3), random(0,3));
+		this.direction = createVector(1, 0);
+		this.speed = random(1,10);
 	}
 
 	setDirection(direction){
-		// save the previous speed
-		var speed = this.vec.mag();
-
-		// set the new angle
-		this.vec = p5.Vector.fromAngle(radians(direction));
-
-		// reapply the speed
-		this.vec.setMag(speed);
+		var directionInRadians = radians(direction); // this translates between degrees and radians
+		this.direction = p5.Vector.fromAngle(directionInRadians);
+		this.direction.setMag(this.speed);
 	}
 
 	move() {
-		this.x = this.x + this.vec.x;
-		this.y = this.y + this.vec.y;
+		this.x = this.x + this.direction.x;
+		this.y = this.y + this.direction.y;
 
+
+		// check the rules!
 		if (this.x > width) {
 			this.x = 0;
 		}
