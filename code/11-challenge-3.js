@@ -25,12 +25,18 @@ class Bubble {
 		this.x = random(width);
 		this.y = random(height);
 		this.color = random(width);
-		this.vec = createVector(0, -1);
+		this.vec = createVector(random(0, 3), random(0,3));
 	}
 
 	setDirection(direction){
+		// save the previous speed
+		var speed = this.vec.mag();
+
+		// set the new angle
 		this.vec = p5.Vector.fromAngle(radians(direction));
-		this.vec.setMag(random(5));
+
+		// reapply the speed
+		this.vec.setMag(speed);
 	}
 
 	move() {
