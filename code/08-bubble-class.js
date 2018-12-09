@@ -21,6 +21,8 @@ function draw() {
 }
 
 class Bubble {
+  // this gets called when the object is created
+  // we use it to initialize our variables
 	constructor() {
 		this.x = 200;
 		this.y = 200;
