@@ -137,6 +137,7 @@ More ideas:
 #### Visualizing Data from APIs
 * [12-get-weather-api.js](code/12-get-weather-api.js)  
 * [13-weather-to-bubble.js](code/13-weather-to-bubble.js)  
+* [17-rijksmuseum-api.js](code/17-rijksmuseum-api.js)  
 
 ### Image Processing
 working with images
