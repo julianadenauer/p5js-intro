@@ -118,7 +118,8 @@ More ideas:
 * actelion imagery wizard https://onformative.com/work/actelion-imagery-wizard
 
 #### Simple Example
-[Simple Logo](code/14-logo.js)
+[Simple Logo Code](code/14-logo.js)  
+![](img/simple-logo.png)
 
 ### Data Visualization
 #### Inspiration
@@ -127,7 +128,11 @@ More ideas:
 * https://datavizproject.com
 
 #### Visualizing Sound
-Tutorial: https://www.youtube.com/watch?v=Pn1g1wjxl_0&list=PLRqwX-V7Uu6aFcVjlDAkkGIixw70s7jpW
+* Tutorial by Dan Shiffman: https://www.youtube.com/watch?v=Pn1g1wjxl_0&list=PLRqwX-V7Uu6aFcVjlDAkkGIixw70s7jpW
+* Getting Data from the microphone and drawing a graph according to the volume => [15-sound-viz.js](code/15-sound-viz.js)  
+![](img/sound-viz.png) 
+* Visualizing it in a circular way => [16-sound-round.js](code/16-sound-round.js)  
+![](img/sound-round.png) 
 
 #### Visualizing Data from APIs
 
