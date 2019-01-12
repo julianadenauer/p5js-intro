@@ -112,13 +112,16 @@ More ideas:
 * Browser Extensions
 
 ### Generative Logos
-#### Examples 
+#### Inspiration
 * https://www.behance.net/gallery/24980545/Dynamic-Identity-for-Startup-Academy
 * MIT Media Lab http://www.rt80.net/medialab/
 * actelion imagery wizard https://onformative.com/work/actelion-imagery-wizard
 
+#### Simple Example
+[Simple Logo](code/14-logo.js)
+
 ### Data Visualization
-#### Examples
+#### Inspiration
 * https://onformative.com/work/skype-visualization
 * https://www.fastcompany.com/3026292/ben-fry-makes-your-sweaty-fuelband-runs-look-gorgeous#7
 * https://datavizproject.com
