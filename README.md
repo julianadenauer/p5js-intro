@@ -2,7 +2,7 @@
 
 ## Courses
 * Weekend #1: 8. & 9.12.2018
-* Weekend #2: 12. & 13.12.2019
+* Weekend #2: 12. & 13.01.2019
 
 ## Resources
 - [p5.js Reference](https://p5js.org/reference/)
