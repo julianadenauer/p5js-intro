@@ -1,19 +1,21 @@
 var bubbles = [];
+var slider;
 var windSpeed = 0;
 var windDirection = 0;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
 
+  // create all our bubbles! yay!
   for (var i = 0; i < 100; i = i + 1) {
     bubbles.push(new Bubble());
   }
-
+  
   // the address of our api
   var url = "https://api.openweathermap.org/data/2.5/weather?";
 
-  // set the city we'd like to get the waether from
-  var city = "Berlin";
+  // set the city we'd like to get the weather from
+  var city = "Murmansk";
 
   // the metric system! royal with cheese!
   var format = "metric";
@@ -26,12 +28,20 @@ function setup() {
 
   // get the data
   httpGet(request, callback);
+
+  // we now have a lot of bubbles in our bubbles-list! yay!
 }
 
 function draw() {
-  background(255);
+  // draw a white background
+  background(600);
+
+  // update and draw all our bubbles!
   for (var i = 0; i < 100; i = i + 1) {
+    // update the positions
     bubbles[i].move();
+
+    // and draw them on the canvas
     bubbles[i].show();
   }
 }
@@ -42,33 +52,36 @@ function callback(data) {
   var parsed = JSON.parse(data);
 
   // save speed and direction in our variables
-  windSpeed = float(parsed.wind.speed);
-  windDirection = int(parsed.wind.deg);
+  windSpeed = parsed.wind.speed;
+  windDirection = parsed.wind.deg;
 
   // write the received wind speed and direction to the console
   print(windSpeed, windDirection);
-
-  // apply the wind direction to our bubbles
+  
+  // set the direction and speed according to the wind
   for (var i = 0; i < 100; i = i + 1) {
     bubbles[i].setDirection(windDirection);
+    bubbles[i].setSpeed(windSpeed);
   }
 }
-
 
 class Bubble {
   constructor() {
     this.x = random(width);
     this.y = random(height);
     this.color = random(width);
-    this.direction = createVector(0, 0);
-    this.speed = random(0, 10);
+    this.direction = createVector(1, 0);
+    this.speed = random(1, 10);
   }
 
   setDirection(direction) {
-    // set the new angle
-    this.direction = p5.Vector.fromAngle(radians(direction));
-
-    // reapply the speed
+    var directionInRadians = radians(direction); // this translates between degrees and radians
+    this.direction = p5.Vector.fromAngle(directionInRadians);
+    this.direction.setMag(this.speed);
+  }
+  
+  setSpeed(speed){
+    this.speed = speed + random(speed * 0.3);
     this.direction.setMag(this.speed);
   }
 
@@ -76,6 +89,8 @@ class Bubble {
     this.x = this.x + this.direction.x;
     this.y = this.y + this.direction.y;
 
+
+    // check the rules!
     if (this.x > width) {
       this.x = 0;
     }
