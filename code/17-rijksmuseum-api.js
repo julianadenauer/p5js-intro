@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(400, 400);
-  httpGet("https://www.rijksmuseum.nl/api/en/collection?q=portrait&key=RVxpJcQK&format=json&ps=99", callback);
+  httpGet("https://www.rijksmuseum.nl/api/en/collection?q=portrait&key=[YOUR API KEY]&format=json&ps=99", callback);
 }
 
 function draw() {
