@@ -3,6 +3,7 @@ var windDirection = 0;
 
 function setup() {
   createCanvas(500, 500);
+	stroke('#34495e');
 
   // the address of our api
   var url = "https://api.openweathermap.org/data/2.5/weather?";
@@ -26,8 +27,13 @@ function setup() {
 function draw() {
   background(0, 200, 255);
 
-  // kreis zeichnen, dessen größe von der windgeschwindigkeit abhängt
-  ellipse(250, 250, windSpeed * 100);
+  // make a line that
+  // - grows in length and width with the wind speed
+  // - turns with the wind direction
+  translate(250, 250);
+  rotate(radians(windDirection));
+	strokeWeight(windSpeed*5);
+  line(-windSpeed * 10, 0, windSpeed * 10, 0);
 }
 
 // this function is called when the data is ready
@@ -35,10 +41,10 @@ function callback(data) {
   // interpret the data as a javascript object
   var parsed = JSON.parse(data);
 
-  // write the received wind speed and direction to the console
-  print(parsed.wind.speed, parsed.wind.deg);
-
   // save speed and direction in our variables
-  windSpeed = parsed.wind.speed;
-	windDirection = parsed.wind.direction;
+  windSpeed = float(parsed.wind.speed);
+  windDirection = int(parsed.wind.deg);
+
+  // write the received wind speed and direction to the console
+  print(windSpeed, windDirection);
 }
