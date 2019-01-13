@@ -139,12 +139,11 @@ More ideas:
 * [13-weather-to-bubble.js](code/13-weather-to-bubble.js)  
 * [17-rijksmuseum-api.js](code/17-rijksmuseum-api.js)  
 
-
-
 ### Image Processing
-* Loading and displaying images
-* Drawing something based on the imges
-* Computer Vision: https://github.com/kylemcdonald/cv-examples
+* Loading and displaying images [18-load-image.js](code/18-load-image.js)  
+* looking at individual pixels [19-loadpixels.js](code/19-loadpixels.js)  
+* drawing something based on the pixels [20-pointilism.js](code/20-pointilism.js)
+* Computer Vision examples: https://github.com/kylemcdonald/cv-examples
 * API Based Computer Vision: https://github.com/julianadenauer/khb-ss18-cognitiveservices/tree/master/session2/08-visionapi
 
 ### Interfaces
