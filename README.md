@@ -139,11 +139,17 @@ More ideas:
 * [13-weather-to-bubble.js](code/13-weather-to-bubble.js)  
 * [17-rijksmuseum-api.js](code/17-rijksmuseum-api.js)  
 
+
+
 ### Image Processing
-working with images
+* Loading and displaying images
+* Drawing something based on the imges
+* Computer Vision: https://github.com/kylemcdonald/cv-examples
+* API Based Computer Vision: https://github.com/julianadenauer/khb-ss18-cognitiveservices/tree/master/session2/08-visionapi
 
 ### Interfaces
-working with live input from the camera
+* working with live input from the camera (see above)
+* speech recognition with p5.speech
 
 ### Websites
 #### References
