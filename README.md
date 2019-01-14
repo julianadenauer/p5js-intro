@@ -154,6 +154,7 @@ More ideas:
 #### References
 * [p5.dom library](http://p5js.org/reference/#/libraries/p5.dom), [beyond the canvas](https://github.com/processing/p5.js/wiki/Beyond-the-canvas)
 * running p5js locally & from a server https://github.com/processing/p5.js/wiki/Local-server
+https://github.com/julianadenauer/khb-ss18-cognitiveservices
 
 ### Browser Extensions
 #### Examples

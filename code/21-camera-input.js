@@ -4,6 +4,7 @@ var pixels;
 function setup() {
   createCanvas(640, 480);
   
+  noStroke();
   capture = createCapture(VIDEO);
   capture.size(640,480);
   capture.hide();  
